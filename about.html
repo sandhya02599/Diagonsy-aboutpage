@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;    
+    }
+    body{
+        width: 100%;
+    }
+    .navbar-1{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color:  #415da1;
+
+    }
+    .navbar1-1{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .navbar1-1 img{
+        height: 16px;
+    }
+    .navbar1-1 a{
+        color: white;
+        margin-left: 10px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+    .navbar1-1 p{
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbar1-1 i{
+        font-size: 16px;
+        color: white;
+
+    }
+    .navbar-1-2{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .navbar-1-2 i{
+        font-size: 16px;
+        color: white;
+        margin-right: 10px;
+
+    }
+    .navbar-1-2 p{
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+    .navbar-2{
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        position: relative;
+        padding-left: 200px;
+        background-color:#e9f1ff;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .menu a{
+        color: #333333;
+        font-family: sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 50px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        color: #333333;
+        padding: 0px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        margin-left: 50px;
+    }
+    .dropbtn i{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .appointment{
+        font-family: sans-serif;
+        font-size: 18px;
+        padding: 14px 24px;
+        color: white;
+        background-color: #415da1;
+        border: none;
+        border-radius: 5px;
+        margin-left:100px;
+    }
+    .C{
+            background-color: #e9f1ff;
+            height: 700px;
+        }
+        .C1{
+            background: url(/images/img6.png);
+            width: 100%;
+            height: 700px;
+            text-align: center;
+            padding-top: 20px;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .C1 h4{
+            font-weight: lighter;
+            font-size: 23px;
+            margin-top: 70px;
+            margin-bottom: 40px;
+        }
+        .C1 h1{
+            font-weight: bold;
+            font-size: 65px;
+            margin-top: -10px;
+            margin-bottom: 40px;
+        }
+        .C1 p{
+            font-size: 22px;
+            font-weight: lighter;
+            color: rgb(97, 96, 96);
+        }
+        .C2 img{
+            margin-top: -500px;
+            background-color: #e9f1ff;
+        }
+        .R{
+            display: flex;
+            margin-left: 200px;
+            margin-top: 200px;
+            column-gap: 150px;
+        }
+        .R1 p{
+            font-size: 25px;
+            font-weight: 70px;
+            margin-bottom: 20px;
+        }
+        .R1 h2{
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        .R1 p{
+            font-weight: 50px;
+            font-size: 23px;
+            color: rgb(83, 79, 79);
+        }
+        .Q{
+            display: flex;
+            margin-top: 70px;
+            column-gap: 30px;
+            margin-bottom: 30px;
+        }
+        .Q1 h3{
+            font-size: 40px;
+            color: #415da1;
+        }
+        .Q1 p{
+            font-weight: 20px;
+            color: rgb(37, 32, 32);
+            font-size: 19px;
+        }
+        .Q2 h3{
+            font-size: 40px;
+            color: #415da1;
+        }
+        .Q2 p{
+            font-weight: 20px;
+            color: rgb(37, 32, 32);
+            font-size: 19px;
+        }
+        .Q3 h3{
+            font-size: 40px;
+            color: #415da1;
+        }
+        .Q3 p{
+            font-weight: 20px;
+            color: rgb(37, 32, 32);
+            font-size: 19px;
+        }
+        .U1 img{
+            margin-top: -70px;
+        }
+        .Q4 button{
+            width: 150px;
+            height: 50px;
+            background-color: #415da1;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+    .E{
+      margin-top: 200px;
+      display: flex;
+      column-gap: 120px;
+      margin-left: 230px;
+    }
+    .E1{
+      border-right: dotted 1px;
+      padding-right: 60px;
+    }
+    .E2{
+      border-right:dotted 1px;
+      padding-right: 60px;
+    }
+    .e{
+      display: flex;
+    }
+    .S{
+      display: flex;
+    }
+    .N{
+       display: flex;
+    }
+    .E img{
+       margin-top: 30px;
+       margin-right:20px;
+    }
+    .S2 h2{
+      margin-top: 30px;
+    }
+    .e2 h2{
+        margin-top: 30px;
+    }
+    .N2 h2{
+       margin-top: 30px;
+    }
+    .Sandy1{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .Sandy1 p{
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+    .Sandy1 h2{
+        font-size: 43px;
+    }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="navbar-1">
+        <div class="navbar1-1">
+            <img src="images/contact-svg.svg">
+            <a href="#">+01234 567 890(24/7)</a>
+            <p>|</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>256, Central Park, New York</p>
+        </div>
+        <div class="navbar-1-2">
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday - Saturday: 9 am - 11.30 pm</p>
+        </div>
+
+     </div>
+     <div class="navbar-2">
+        <img src="images/logo.png" alt="">
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">Home<i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Home_One</a>
+                    <a href="#">Home_Two</a>
+                </div>
+            </div>
+           
+           <a href="#">About</a>
+           <a href="#">Services</a>
+            <div class="dropdown">
+                <button class="dropbtn">Pages<i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Appointment</a>
+                    <a href="#">Teams</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Testimonials</a>
+                </div>
+            </div>
+            <a href="#">Doctors</a>
+            <a href="#">Contact</a>
+        </div>
+        <button class="appointment">Appointment</button>
+    </div>
+    <div class="Contaniter">
+        <div class="C">
+            <div class="C1">
+                <h4>About Us</h4>
+                <h1>Know about Diagnosy</h1>
+                <p>Diagnosy always help to provide proper treatment for all of get<br>  proper cure and healty life which is the most focus thing</p>
+            </div>
+        </div>
+        <div class="R">
+            <div class="R1">
+                <p>Welcome To Diagonsy</p>
+                <h2>Consult with our best Doctor<br> for proper Treatment</h2>
+                <p>Diagnosy always help to provide proper treatment for most of<br> get the proper cure and healty life which is the cooperate<br>  focus thing for us patient our main proprity services<br></p>
+                    <p>Diagnosy always help to provide proper treatment for most of<br> get the proper cure and healty life which cooperate</p>
+
+                    <div class="Q">
+                        <div class="Q1">
+                              <h3>8566+</h3>
+                              <p>Happy Patients</p>
+                        </div>
+                        <div class="Q2">
+                            <h3>135+</h3>
+                              <p>Expert Doctors</p>
+                        </div>
+                        <div class="Q3">
+                            <h3>120+</h3>
+                              <p>Award Winning</p>
+                        </div>
+                    </div>
+                    <div class="Q4">
+                        <button>Learn More</button>
+                    </div>
+                    </div>
+                 <div class="U">
+                <div class="U1">
+                    <img src="images/img7.webp">
+                </div>
+            </div>
+        </div>
+
+     <div class="E">
+        <div class="E1">
+        <div class="e">
+                <div class="e1">
+                    <img src="images/image1.svg">
+                </div>
+                <div class="e2">
+                    <h2> Emervency Services</h2>
+                    <p> 24/7 Emergency service</p>
+                </div>
+            </div>
+        </div>
+        <div class="E2">
+            <div class="S">
+                <div class="S1">
+                    <img src="images/image2.svg">
+                 </div>
+                 <div class="S2">
+                    <h2> Qulified Doctors</h2>
+                    <p> Best Doctors Collection</p>
+                </div>
+            </div>
+           
+        </div>
+        <div class="E3">
+            <div class="N">
+             <div class="N1">
+               <img src="images/image3.svg">
+             </div>
+              <div class="N2">
+                <h2> Get Online Report</h2>
+                <p> We mail your Report</p>
+              </div>
+           </div>
+        </div>
+     </div> 
+       <div class="sandy">
+            <div class="Sandy1">
+                <p>Why Choose Us</p>
+                <h2>Complete Healthcare Solution<br> for our valuable Patients</h2>
+            </div>
+            <div class="sandhya">
+                <div class="SS">
+                    <img src="images/image4.webp">
+                </div>
+            </div>
+       </div>
+    </div>    
+</body>
+</html>
